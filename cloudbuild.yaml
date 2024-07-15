@@ -7,3 +7,4 @@ steps:
   args: ['set', 'image', 'deployment/django_web_app', 'django_web_app=gcr.io/$PROJECT_ID/django_web_app', '--namespace=default']
 images:
 - 'gcr.io/$PROJECT_ID/django_web_app'
+logsBucket: 'gs://cloud-build-logs-bucket12'
