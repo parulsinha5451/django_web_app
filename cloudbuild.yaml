@@ -10,4 +10,4 @@ steps:
 images:
 - 'gcr.io/$PROJECT_ID/django-web-app'
 options:
-  logging: 'NONE'
+  logging: 'gs://cloud-build-logs-bucket12'
