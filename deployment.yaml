@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: django_web_app
+  name: django-web-app
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: django_web_app
+      app: django-web-app
   template:
     metadata:
       labels:
-        app: django_web_app
+        app: django-web-app
     spec:
       containers:
-      - name: django_web_app
-        image: gcr.io/internship-tasks-428019/django_web_app
+      - name: django-web-app
+        image: gcr.io/internship-tasks-428019/django-web-app
         ports:
         - containerPort: 8080
