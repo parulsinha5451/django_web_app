@@ -10,4 +10,5 @@ steps:
 images:
 - 'gcr.io/$PROJECT_ID/django-web-app'
 options:
-  logging: 'NONE'
+  logging: 'CLOUD_LOGGING_ONLY'
+
